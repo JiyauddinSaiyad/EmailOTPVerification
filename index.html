@@ -21,7 +21,7 @@
     <script>
       function sendOTP() {
         const email = document.getElementById("email").value;
-        fetch("http://localhost:3000/send-otp", {
+        fetch("https://emailotpverification-hczr.onrender.com/send-otp", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -36,7 +36,7 @@
       function verifyOTP() {
         const email = document.getElementById("email").value;
         const otp = document.getElementById("otp").value;
-        fetch("http://localhost:3000/verify-otp", {
+        fetch("https://emailotpverification-hczr.onrender.com/verify-otp", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
